@@ -115,11 +115,10 @@ namespace Team_Manager
             }
             this.Controls.AddRange(players.ToArray());
         }
-
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             TeamViewForm form = new TeamViewForm();
-            form.ShowDialoq(CountryName, CountryCode);
+            form.ShowDialoq(CountryName, CountryCode,GeneralPos);
         }
     }
 }

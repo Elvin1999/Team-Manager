@@ -28,44 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pictureBoxTeam = new System.Windows.Forms.PictureBox();
             this.pictureBoxFlag = new System.Windows.Forms.PictureBox();
             this.labelCountry = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).BeginInit();
             this.SuspendLayout();
             // 
+            // pictureBoxTeam
+            // 
+            this.pictureBoxTeam.Image = global::Team_Manager.Properties.Resources.soccer_field_148894_960_720;
+            this.pictureBoxTeam.Location = new System.Drawing.Point(1, 2);
+            this.pictureBoxTeam.Name = "pictureBoxTeam";
+            this.pictureBoxTeam.Size = new System.Drawing.Size(519, 726);
+            this.pictureBoxTeam.TabIndex = 2;
+            this.pictureBoxTeam.TabStop = false;
+            // 
             // pictureBoxFlag
             // 
-            this.pictureBoxFlag.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxFlag.Location = new System.Drawing.Point(1, 2);
             this.pictureBoxFlag.Name = "pictureBoxFlag";
-            this.pictureBoxFlag.Size = new System.Drawing.Size(132, 69);
-            this.pictureBoxFlag.TabIndex = 0;
+            this.pictureBoxFlag.Size = new System.Drawing.Size(132, 60);
+            this.pictureBoxFlag.TabIndex = 3;
             this.pictureBoxFlag.TabStop = false;
             // 
             // labelCountry
             // 
-            this.labelCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCountry.Location = new System.Drawing.Point(195, 13);
+            this.labelCountry.Location = new System.Drawing.Point(386, 2);
             this.labelCountry.Name = "labelCountry";
-            this.labelCountry.Size = new System.Drawing.Size(116, 45);
-            this.labelCountry.TabIndex = 1;
+            this.labelCountry.Size = new System.Drawing.Size(111, 41);
+            this.labelCountry.TabIndex = 4;
+            this.labelCountry.Text = "label1";
             // 
             // TeamViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 524);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(531, 740);
             this.Controls.Add(this.labelCountry);
             this.Controls.Add(this.pictureBoxFlag);
+            this.Controls.Add(this.pictureBoxTeam);
             this.Name = "TeamViewForm";
             this.Text = "TeamViewForm";
             this.Load += new System.EventHandler(this.TeamViewForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.PictureBox pictureBoxTeam;
         private System.Windows.Forms.PictureBox pictureBoxFlag;
         private System.Windows.Forms.Label labelCountry;
     }

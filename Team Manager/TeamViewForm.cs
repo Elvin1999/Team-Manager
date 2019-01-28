@@ -16,8 +16,10 @@ namespace Team_Manager
         {
             InitializeComponent();
         }
-        public DialogResult ShowDialoq(string name, string countrycode)
+        public DialogResult ShowDialoq(string name, string countrycode, List<string> position)
         {
+            pictureBoxTeam.Image = Properties.Resources.soccer_field_148894_960_720;
+            pictureBoxTeam.SizeMode = PictureBoxSizeMode.StretchImage;
             labelCountry.Text = name;
             String url = "https://www.countryflags.io/az/flat/64.png";
             var nurl = url.Insert(28, countrycode);
@@ -28,6 +30,12 @@ namespace Team_Manager
         }
         private void TeamViewForm_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBoxFlag_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
