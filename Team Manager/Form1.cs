@@ -20,6 +20,7 @@ namespace Team_Manager
             metroCmCountry.DataSource = GetCountries();
 
         }
+        public List<PlayerControl> players { get; set; }
         private List<string> GetCountries()
         {
             List<string> CulturesInfo = new List<string>();
@@ -38,15 +39,21 @@ namespace Team_Manager
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {//player1.Name = "Elvin";//player1.Number = "7";
+            
+            PlayerControl player1 = new PlayerControl();            
+            player1.Position = "F";           
+            player1.Location = new Point(2,40);
 
+            players = new List<PlayerControl>();
+            //players.Add(player1); players.Add(player2); players.Add(player3); players.Add(player4); players.Add(player5);
+            this.Controls.AddRange(players.ToArray());
         }
 
         private void pictureFlag_Click(object sender, EventArgs e)
         {
 
         }
-
         private void metroCmCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
            // List<string> CulturesInfo = new List<string>();
