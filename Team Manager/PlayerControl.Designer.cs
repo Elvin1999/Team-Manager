@@ -39,7 +39,7 @@
             this.textBoxPosition.Multiline = true;
             this.textBoxPosition.Name = "textBoxPosition";
             this.textBoxPosition.ReadOnly = true;
-            this.textBoxPosition.Size = new System.Drawing.Size(112, 30);
+            this.textBoxPosition.Size = new System.Drawing.Size(112, 20);
             this.textBoxPosition.TabIndex = 0;
             this.textBoxPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -48,7 +48,7 @@
             this.textBoxNumber.Location = new System.Drawing.Point(174, 58);
             this.textBoxNumber.Multiline = true;
             this.textBoxNumber.Name = "textBoxNumber";
-            this.textBoxNumber.Size = new System.Drawing.Size(112, 30);
+            this.textBoxNumber.Size = new System.Drawing.Size(112, 20);
             this.textBoxNumber.TabIndex = 0;
             // 
             // textBoxName
@@ -56,7 +56,7 @@
             this.textBoxName.Location = new System.Drawing.Point(337, 58);
             this.textBoxName.Multiline = true;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(112, 30);
+            this.textBoxName.Size = new System.Drawing.Size(112, 20);
             this.textBoxName.TabIndex = 0;
             // 
             // PlayerControl
@@ -67,7 +67,7 @@
             this.Controls.Add(this.textBoxNumber);
             this.Controls.Add(this.textBoxPosition);
             this.Name = "PlayerControl";
-            this.Size = new System.Drawing.Size(563, 103);
+            this.Size = new System.Drawing.Size(563, 96);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBoxTopLabels = new System.Windows.Forms.GroupBox();
+            this.metroCbPosition = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlag)).BeginInit();
             this.groupBoxTopLabels.SuspendLayout();
             this.SuspendLayout();
@@ -106,11 +107,22 @@
             this.groupBoxTopLabels.TabIndex = 4;
             this.groupBoxTopLabels.TabStop = false;
             // 
+            // metroCbPosition
+            // 
+            this.metroCbPosition.FormattingEnabled = true;
+            this.metroCbPosition.ItemHeight = 23;
+            this.metroCbPosition.Location = new System.Drawing.Point(466, 4);
+            this.metroCbPosition.Name = "metroCbPosition";
+            this.metroCbPosition.Size = new System.Drawing.Size(61, 29);
+            this.metroCbPosition.TabIndex = 5;
+            this.metroCbPosition.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 619);
+            this.ClientSize = new System.Drawing.Size(539, 641);
+            this.Controls.Add(this.metroCbPosition);
             this.Controls.Add(this.groupBoxTopLabels);
             this.Controls.Add(this.pictureFlag);
             this.Controls.Add(this.metroCmCountry);
@@ -134,6 +146,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBoxTopLabels;
+        private MetroFramework.Controls.MetroComboBox metroCbPosition;
     }
 }
 
