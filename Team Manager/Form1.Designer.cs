@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBoxTopLabels = new System.Windows.Forms.GroupBox();
             this.metroCbPosition = new MetroFramework.Controls.MetroComboBox();
+            this.buttonGenerate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlag)).BeginInit();
             this.groupBoxTopLabels.SuspendLayout();
             this.SuspendLayout();
@@ -117,11 +118,24 @@
             this.metroCbPosition.TabIndex = 5;
             this.metroCbPosition.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
             // 
+            // buttonGenerate
+            // 
+            this.buttonGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGenerate.Location = new System.Drawing.Point(371, 546);
+            this.buttonGenerate.Name = "buttonGenerate";
+            this.buttonGenerate.Size = new System.Drawing.Size(121, 40);
+            this.buttonGenerate.TabIndex = 6;
+            this.buttonGenerate.Text = "Generate";
+            this.buttonGenerate.UseVisualStyleBackColor = false;
+            this.buttonGenerate.Click += new System.EventHandler(this.buttonGenerate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 641);
+            this.ClientSize = new System.Drawing.Size(539, 654);
+            this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.metroCbPosition);
             this.Controls.Add(this.groupBoxTopLabels);
             this.Controls.Add(this.pictureFlag);
@@ -147,6 +161,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBoxTopLabels;
         private MetroFramework.Controls.MetroComboBox metroCbPosition;
+        private System.Windows.Forms.Button buttonGenerate;
     }
 }
 

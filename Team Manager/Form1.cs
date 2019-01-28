@@ -24,7 +24,8 @@ namespace Team_Manager
             };
             metroCbPosition.DataSource = positions.ToArray();
         }
-
+        public string CountryName { get; set; }
+        public string CountryCode { get; set; }
         private List<string> GetCountries()
         {
             List<string> CulturesInfo = new List<string>();
@@ -57,6 +58,7 @@ namespace Team_Manager
             List<string> CulturesInfo = new List<string>();
             CultureInfo[] cultures = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
             string countryname = metroCmCountry.SelectedItem.ToString();
+            CountryName = countryname;
             RegionInfo info = new RegionInfo(cultures[0].LCID);
             string countrycode = String.Empty;
             foreach (CultureInfo culture in cultures)
@@ -67,13 +69,10 @@ namespace Team_Manager
                 if (countryname == info.EnglishName)
                 {
                     countrycode = info.Name;
+                    CountryCode = countrycode;
                 }
             }
-            String url = "https://www.countryflags.io/az/flat/64.png";
-            var nurl = url.Insert(28, countrycode);
-            var newUrl = nurl.Remove(30, 2);
-            pictureFlag.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureFlag.Load(newUrl);
+            
         }
         public string Position { get; set; }
         List<string> position442 = new List<string>() { "GK", "DD", "DD", "DD", "DD", "MD", "MD", "MD", "MD", "F", "F" };
@@ -115,6 +114,12 @@ namespace Team_Manager
                 player1 = new PlayerControl();
             }
             this.Controls.AddRange(players.ToArray());
+        }
+
+        private void buttonGenerate_Click(object sender, EventArgs e)
+        {
+            TeamViewForm form = new TeamViewForm();
+            form.ShowDialoq(CountryName, CountryCode);
         }
     }
 }
