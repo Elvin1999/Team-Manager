@@ -18,6 +18,7 @@ namespace Team_Manager
         {
             InitializeComponent();
             metroCmCountry.DataSource = GetCountries();
+
         }
         private List<string> GetCountries()
         {
@@ -25,6 +26,7 @@ namespace Team_Manager
             CultureInfo[] cultures = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
             foreach (CultureInfo culture in cultures)
             {
+
                 RegionInfo info = new RegionInfo(culture.LCID);
                 if (!CulturesInfo.Contains(info.EnglishName))
                 {
@@ -47,11 +49,28 @@ namespace Team_Manager
 
         private void metroCmCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
+           // List<string> CulturesInfo = new List<string>();
+           // CultureInfo[] cultures = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
+           // string countryname=metroCmCountry.SelectedItem.ToString();
+           // RegionInfo info = new RegionInfo(cultures[0].LCID);
+           // string countrycode = String.Empty;
+           // foreach (CultureInfo culture in cultures)
+           // {
+
+           //     info = new RegionInfo(culture.LCID);
+                
+           //     //MessageBox.Show(info.Name + info.EnglishName);
+           //     if (countryname == info.EnglishName)
+           //     {
+           //         countrycode = info.Name;
+           //     }
+           // }
             
-            
-            String url = "https://www.countryflags.io/az/flat/64.png";
-            pictureFlag.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureFlag.Load(url);
+           // String url = "https://www.countryflags.io/az/flat/64.png";
+           // var nurl=url.Insert(28, countrycode);
+           // var newUrl = nurl.Remove(30, 2);
+           // pictureFlag.SizeMode = PictureBoxSizeMode.StretchImage;
+           // pictureFlag.Load(newUrl);
         }
     }
 }
