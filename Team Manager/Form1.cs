@@ -24,7 +24,7 @@ namespace Team_Manager
             };
             metroCbPosition.DataSource = positions.ToArray();
         }
-        public List<PlayerControl> players { get; set; }
+
         private List<string> GetCountries()
         {
             List<string> CulturesInfo = new List<string>();
@@ -81,23 +81,32 @@ namespace Team_Manager
         List<string> position532 = new List<string>() { "GK", "DD", "DD", "DD", "DD", "DD", "MD", "MD", "MD", "F", "F" };
         PlayerControl player1 = new PlayerControl();
         public List<string> GeneralPos { get; set; }
+        List<PlayerControl> players = new List<PlayerControl>();
+
+        List<PlayerControl> willdelete = new List<PlayerControl>();
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            foreach (var item in this.Controls)
+            {
+                if(item is PlayerControl pb)
+                {
+                    willdelete.Add(pb);
+                }
+            }
+            willdelete.ForEach((o) => { o.Dispose(); });
             Position = metroCbPosition.SelectedItem.ToString();
             if (Position == "4-4-2")
             {
                 GeneralPos = position442;
             }
-            else if(Position == "4-3-3")
+            else if (Position == "4-3-3")
             {
                 GeneralPos = position433;
             }
-            else if(Position == "5-3-2")
+            else if (Position == "5-3-2")
             {
                 GeneralPos = position532;
-
             }
-            players = new List<PlayerControl>();
             for (int i = 0; i < 11; i++)
             {
                 player1.Position = GeneralPos[i];
