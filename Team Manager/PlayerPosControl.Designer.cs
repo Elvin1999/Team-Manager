@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.labelName = new System.Windows.Forms.Label();
-            this.picturePlayer = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.picturePlayer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,18 +44,6 @@
             this.labelName.TabIndex = 1;
             this.labelName.Text = "n";
             // 
-            // picturePlayer
-            // 
-            this.picturePlayer.BackColor = System.Drawing.Color.LimeGreen;
-            this.picturePlayer.BackgroundImage = global::Team_Manager.Properties.Resources.newTshirt;
-            this.picturePlayer.Image = global::Team_Manager.Properties.Resources.t_shirt;
-            this.picturePlayer.Location = new System.Drawing.Point(3, 3);
-            this.picturePlayer.Name = "picturePlayer";
-            this.picturePlayer.Size = new System.Drawing.Size(47, 56);
-            this.picturePlayer.TabIndex = 0;
-            this.picturePlayer.TabStop = false;
-            this.picturePlayer.Click += new System.EventHandler(this.picturePlayer_Click);
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(17)))), ((int)(((byte)(0)))));
@@ -65,6 +53,18 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // picturePlayer
+            // 
+            this.picturePlayer.BackColor = System.Drawing.Color.LimeGreen;
+            this.picturePlayer.BackgroundImage = global::Team_Manager.Properties.Resources.newTshirt___Copy;
+            this.picturePlayer.Image = global::Team_Manager.Properties.Resources.t_shirt;
+            this.picturePlayer.Location = new System.Drawing.Point(3, 3);
+            this.picturePlayer.Name = "picturePlayer";
+            this.picturePlayer.Size = new System.Drawing.Size(47, 56);
+            this.picturePlayer.TabIndex = 0;
+            this.picturePlayer.TabStop = false;
+            this.picturePlayer.Click += new System.EventHandler(this.picturePlayer_Click);
             // 
             // PlayerPosControl
             // 

@@ -59,7 +59,7 @@
             this.pictureBoxFlag.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBoxFlag.Location = new System.Drawing.Point(1, 2);
             this.pictureBoxFlag.Name = "pictureBoxFlag";
-            this.pictureBoxFlag.Size = new System.Drawing.Size(132, 60);
+            this.pictureBoxFlag.Size = new System.Drawing.Size(96, 60);
             this.pictureBoxFlag.TabIndex = 3;
             this.pictureBoxFlag.TabStop = false;
             this.pictureBoxFlag.Click += new System.EventHandler(this.pictureBoxFlag_Click_1);

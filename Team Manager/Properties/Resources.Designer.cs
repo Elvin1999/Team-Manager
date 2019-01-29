@@ -83,6 +83,16 @@ namespace Team_Manager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap newTshirt___Copy {
+            get {
+                object obj = ResourceManager.GetObject("newTshirt - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap soccer_field_148894_960_720 {
             get {
                 object obj = ResourceManager.GetObject("soccer-field-148894_960_720", resourceCulture);

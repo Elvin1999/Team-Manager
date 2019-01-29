@@ -19,6 +19,7 @@ namespace Team_Manager
             InitializeComponent();
         }
         List<PlayerControl> players = new List<PlayerControl>();
+        int count = 0;
         public DialogResult ShowDialoq(string name, string countrycode, List<string> position, List<PlayerControl> players)
         {
             //pictureBoxTeam.Image = Properties.Resources.soccer_field_148894_960_720;
@@ -71,14 +72,14 @@ namespace Team_Manager
                     if (dd == 5)
                     {
                         i -= 5;
-                     
+
                         player1.Location = new Point(xd * (i + 1), 450);
                         i += 5;
                     }
                     else
                     {
                         i -= 6;
-        
+
                         player1.Location = new Point(xd * (i + 1), 450);
                         i += 6;
                     }
@@ -98,16 +99,25 @@ namespace Team_Manager
                         player1.Location = new Point(xmd * (i + 1), 300);
                         i += 3;
                     }
-
                 }
                 else if (positions[i] == "GK")
                 {
                     player1.Location = new Point(230, 550);
                 }
                 player1.Name = players[i].Name;
-       
-                player1.PlayerImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                player1.PlayerImage.Image = Properties.Resources.newTshirt;
+
+                if (count == 0)
+                {
+                    player1.PlayerImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                    player1.PlayerImage.Image = Properties.Resources.newTshirt___Copy;
+                    ++count;
+                }
+                else
+                {
+                    player1.PlayerImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                    player1.PlayerImage.Image = Properties.Resources.newTshirt;
+
+                }
                 positioncontrol.Add(player1);
             }
 
