@@ -37,6 +37,7 @@
             this.groupBoxTopLabels = new System.Windows.Forms.GroupBox();
             this.metroCbPosition = new MetroFramework.Controls.MetroComboBox();
             this.buttonGenerate = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFlag)).BeginInit();
             this.groupBoxTopLabels.SuspendLayout();
             this.SuspendLayout();
@@ -55,15 +56,16 @@
             // 
             this.metroCmCountry.FormattingEnabled = true;
             this.metroCmCountry.ItemHeight = 23;
-            this.metroCmCountry.Location = new System.Drawing.Point(154, 3);
+            this.metroCmCountry.Location = new System.Drawing.Point(109, 4);
             this.metroCmCountry.Name = "metroCmCountry";
             this.metroCmCountry.Size = new System.Drawing.Size(192, 29);
             this.metroCmCountry.TabIndex = 1;
+            this.metroCmCountry.UseSelectable = true;
             this.metroCmCountry.SelectedIndexChanged += new System.EventHandler(this.metroCmCountry_SelectedIndexChanged);
             // 
             // pictureFlag
             // 
-            this.pictureFlag.Location = new System.Drawing.Point(371, 4);
+            this.pictureFlag.Location = new System.Drawing.Point(337, 5);
             this.pictureFlag.Name = "pictureFlag";
             this.pictureFlag.Size = new System.Drawing.Size(72, 28);
             this.pictureFlag.TabIndex = 2;
@@ -112,10 +114,11 @@
             // 
             this.metroCbPosition.FormattingEnabled = true;
             this.metroCbPosition.ItemHeight = 23;
-            this.metroCbPosition.Location = new System.Drawing.Point(466, 4);
+            this.metroCbPosition.Location = new System.Drawing.Point(441, 5);
             this.metroCbPosition.Name = "metroCbPosition";
             this.metroCbPosition.Size = new System.Drawing.Size(61, 29);
             this.metroCbPosition.TabIndex = 5;
+            this.metroCbPosition.UseSelectable = true;
             this.metroCbPosition.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
             // 
             // buttonGenerate
@@ -130,17 +133,30 @@
             this.buttonGenerate.UseVisualStyleBackColor = false;
             this.buttonGenerate.Click += new System.EventHandler(this.buttonGenerate_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(509, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(28, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 654);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.metroCbPosition);
             this.Controls.Add(this.groupBoxTopLabels);
             this.Controls.Add(this.pictureFlag);
             this.Controls.Add(this.metroCmCountry);
             this.Controls.Add(this.labelCountry);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -162,6 +178,7 @@
         private System.Windows.Forms.GroupBox groupBoxTopLabels;
         private MetroFramework.Controls.MetroComboBox metroCbPosition;
         private System.Windows.Forms.Button buttonGenerate;
+        private System.Windows.Forms.Button button1;
     }
 }
 

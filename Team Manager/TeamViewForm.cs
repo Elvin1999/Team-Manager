@@ -45,38 +45,61 @@ namespace Team_Manager
                     ++dd;
                 }
             }
-            int x = 0;
+            int x = 0, xd = 0, xmd = 0;
             if (f == 3)
             {
-                x = 105;
+                x = 115; xmd = 115; xd = 100;
             }
             else if (f == 2)
             {
-                x = 150;
+                x = 150; xmd = 88; xd = 88;
             }
-
+            if (dd == 5)
+            {
+                x = 150; xmd = 107; xd = 78;
+            }
             for (int i = 0; i < 11; i++)
             {
                 PlayerPosControl player1 = new PlayerPosControl();
                 if (positions[i] == "F")
                 {
-                    
+
                     player1.Location = new Point(x * (i + 1), 100);
                 }
                 else if (positions[i] == "DD")
                 {
-                    i -= 6;
-                    x = 90;
-                    player1.Location = new Point(x * (i + 1), 450);
-                    i += 6;
+                    if (dd == 5)
+                    {
+                        i -= 5;
+                     
+                        player1.Location = new Point(xd * (i + 1), 450);
+                        i += 5;
+                    }
+                    else
+                    {
+                        i -= 6;
+        
+                        player1.Location = new Point(xd * (i + 1), 450);
+                        i += 6;
+                    }
+
                 }
                 else if (positions[i] == "MD")
                 {
-                    i -= 3; x = 102;
-                    player1.Location = new Point(x * (i + 1), 300);
-                    i += 3;
-                }
+                    if (f == 2)
+                    {
+                        i -= 2;
+                        player1.Location = new Point(xmd * (i + 1), 300);
+                        i += 2;
+                    }
+                    else
+                    {
+                        i -= 3;
+                        player1.Location = new Point(xmd * (i + 1), 300);
+                        i += 3;
+                    }
 
+                }
                 else if (positions[i] == "GK")
                 {
                     player1.Location = new Point(230, 550);

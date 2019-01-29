@@ -120,5 +120,10 @@ namespace Team_Manager
             TeamViewForm form = new TeamViewForm();
             form.ShowDialoq(CountryName, CountryCode,GeneralPos,players);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
