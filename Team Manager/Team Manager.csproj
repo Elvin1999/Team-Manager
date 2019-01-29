@@ -66,6 +66,12 @@
     <Compile Include="PlayerControl.Designer.cs">
       <DependentUpon>PlayerControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayerPosControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerPosControl.Designer.cs">
+      <DependentUpon>PlayerPosControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamViewForm.cs">
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PlayerControl.resx">
       <DependentUpon>PlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerPosControl.resx">
+      <DependentUpon>PlayerPosControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\soccer-field-148894_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1182156.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

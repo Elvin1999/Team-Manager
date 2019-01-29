@@ -28,32 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBoxTeam = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFlag = new System.Windows.Forms.PictureBox();
             this.labelCountry = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).BeginInit();
+            this.pictureBoxFlag = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTeam = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBoxTeam
-            // 
-            this.pictureBoxTeam.BackColor = System.Drawing.Color.LimeGreen;
-            this.pictureBoxTeam.Image = global::Team_Manager.Properties.Resources.soccer_field_148894_960_720;
-            this.pictureBoxTeam.Location = new System.Drawing.Point(1, 2);
-            this.pictureBoxTeam.Name = "pictureBoxTeam";
-            this.pictureBoxTeam.Size = new System.Drawing.Size(519, 738);
-            this.pictureBoxTeam.TabIndex = 2;
-            this.pictureBoxTeam.TabStop = false;
-            // 
-            // pictureBoxFlag
-            // 
-            this.pictureBoxFlag.BackColor = System.Drawing.Color.LimeGreen;
-            this.pictureBoxFlag.Location = new System.Drawing.Point(1, 2);
-            this.pictureBoxFlag.Name = "pictureBoxFlag";
-            this.pictureBoxFlag.Size = new System.Drawing.Size(132, 60);
-            this.pictureBoxFlag.TabIndex = 3;
-            this.pictureBoxFlag.TabStop = false;
             // 
             // labelCountry
             // 
@@ -75,6 +56,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBoxFlag
+            // 
+            this.pictureBoxFlag.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBoxFlag.Location = new System.Drawing.Point(1, 2);
+            this.pictureBoxFlag.Name = "pictureBoxFlag";
+            this.pictureBoxFlag.Size = new System.Drawing.Size(132, 60);
+            this.pictureBoxFlag.TabIndex = 3;
+            this.pictureBoxFlag.TabStop = false;
+            // 
+            // pictureBoxTeam
+            // 
+            this.pictureBoxTeam.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBoxTeam.Location = new System.Drawing.Point(1, 2);
+            this.pictureBoxTeam.Name = "pictureBoxTeam";
+            this.pictureBoxTeam.Size = new System.Drawing.Size(519, 738);
+            this.pictureBoxTeam.TabIndex = 2;
+            this.pictureBoxTeam.TabStop = false;
+            // 
             // TeamViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -89,8 +88,8 @@
             this.Name = "TeamViewForm";
             this.Text = "TeamViewForm";
             this.Load += new System.EventHandler(this.TeamViewForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).EndInit();
             this.ResumeLayout(false);
 
         }
