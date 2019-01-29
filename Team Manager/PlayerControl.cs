@@ -20,5 +20,13 @@ namespace Team_Manager
         {
             InitializeComponent();
         }
+
+        private void textBoxName_Enter(object sender, EventArgs e)
+        {
+            if (textBoxName.Text == "PlayerControl")
+            {
+                textBoxName.Text = String.Empty;
+            }
+        }
     }
 }

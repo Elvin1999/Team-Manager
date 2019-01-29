@@ -111,6 +111,7 @@ namespace Team_Manager
                 player1.Position = GeneralPos[i];
                 player1.Name = player1.NameTextbox.Text;
                 player1.Number = player1.NumberTextbox.Text;
+
                 player1.Location = new Point(2, 40 * (i + 1));
                 players.Add(player1);
                 player1 = new PlayerControl();
@@ -120,6 +121,12 @@ namespace Team_Manager
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             TeamViewForm form = new TeamViewForm();
+            List<PlayerControl> newlist = new List<PlayerControl>();
+            for (int i = 0; i < players.Count; i++)
+            {
+                players[i].Name = players[i].NameTextbox.Text;
+                players[i].Number = players[i].NumberTextbox.Text;
+            }
             form.ShowDialoq(CountryName, CountryCode,GeneralPos,players);
         }
 

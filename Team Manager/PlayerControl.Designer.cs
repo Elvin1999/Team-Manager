@@ -58,6 +58,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(112, 20);
             this.textBoxName.TabIndex = 0;
+            this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
             // 
             // PlayerControl
             // 

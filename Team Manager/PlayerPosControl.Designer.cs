@@ -30,6 +30,7 @@
         {
             this.labelName = new System.Windows.Forms.Label();
             this.picturePlayer = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +56,22 @@
             this.picturePlayer.TabStop = false;
             this.picturePlayer.Click += new System.EventHandler(this.picturePlayer_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DarkRed;
+            this.label1.Location = new System.Drawing.Point(18, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // PlayerPosControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.picturePlayer);
             this.Name = "PlayerPosControl";
@@ -73,5 +85,6 @@
 
         private System.Windows.Forms.PictureBox picturePlayer;
         private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label label1;
     }
 }
