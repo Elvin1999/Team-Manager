@@ -109,6 +109,8 @@ namespace Team_Manager
             for (int i = 0; i < 11; i++)
             {
                 player1.Position = GeneralPos[i];
+                player1.Name = player1.NameTextbox.Text;
+                player1.Number = player1.NumberTextbox.Text;
                 player1.Location = new Point(2, 40 * (i + 1));
                 players.Add(player1);
                 player1 = new PlayerControl();

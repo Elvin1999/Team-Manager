@@ -105,9 +105,9 @@ namespace Team_Manager
                     player1.Location = new Point(230, 550);
                 }
                 player1.Name = players[i].Name;
+       
                 player1.PlayerImage.SizeMode = PictureBoxSizeMode.StretchImage;
                 player1.PlayerImage.Image = Properties.Resources.t_shirt;
-
                 positioncontrol.Add(player1);
             }
 
