@@ -47,7 +47,7 @@
             // picturePlayer
             // 
             this.picturePlayer.BackColor = System.Drawing.Color.LimeGreen;
-            this.picturePlayer.BackgroundImage = global::Team_Manager.Properties.Resources.t_shirt;
+            this.picturePlayer.BackgroundImage = global::Team_Manager.Properties.Resources.newTshirt;
             this.picturePlayer.Image = global::Team_Manager.Properties.Resources.t_shirt;
             this.picturePlayer.Location = new System.Drawing.Point(3, 3);
             this.picturePlayer.Name = "picturePlayer";
@@ -58,7 +58,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkRed;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(17)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(18, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
