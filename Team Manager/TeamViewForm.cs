@@ -56,7 +56,7 @@ namespace Team_Manager
             }
             if (dd == 5)
             {
-                x = 150; xmd = 107; xd = 78;
+                x = 150; xmd = 110; xd = 78;
             }
             for (int i = 0; i < 11; i++)
             {
