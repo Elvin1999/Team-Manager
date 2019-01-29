@@ -35,30 +35,35 @@
             // 
             // labelName
             // 
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelName.Location = new System.Drawing.Point(45, 13);
+            this.labelName.BackColor = System.Drawing.Color.LimeGreen;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.Location = new System.Drawing.Point(3, 62);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(52, 62);
+            this.labelName.Size = new System.Drawing.Size(47, 16);
             this.labelName.TabIndex = 1;
-            this.labelName.Text = "name";
+            this.labelName.Text = "n";
             // 
             // picturePlayer
             // 
-            this.picturePlayer.Image = global::Team_Manager.Properties.Resources._1182156;
-            this.picturePlayer.Location = new System.Drawing.Point(28, 3);
+            this.picturePlayer.BackColor = System.Drawing.Color.LimeGreen;
+            this.picturePlayer.BackgroundImage = global::Team_Manager.Properties.Resources.t_shirt;
+            this.picturePlayer.Image = global::Team_Manager.Properties.Resources.t_shirt;
+            this.picturePlayer.Location = new System.Drawing.Point(3, 3);
             this.picturePlayer.Name = "picturePlayer";
-            this.picturePlayer.Size = new System.Drawing.Size(69, 81);
+            this.picturePlayer.Size = new System.Drawing.Size(47, 56);
             this.picturePlayer.TabIndex = 0;
             this.picturePlayer.TabStop = false;
+            this.picturePlayer.Click += new System.EventHandler(this.picturePlayer_Click);
             // 
             // PlayerPosControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.picturePlayer);
             this.Name = "PlayerPosControl";
-            this.Size = new System.Drawing.Size(205, 98);
+            this.Size = new System.Drawing.Size(55, 78);
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).EndInit();
             this.ResumeLayout(false);
 

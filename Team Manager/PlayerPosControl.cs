@@ -19,5 +19,10 @@ namespace Team_Manager
         {
             InitializeComponent();
         }
+
+        private void picturePlayer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

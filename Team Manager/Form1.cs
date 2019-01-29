@@ -75,9 +75,9 @@ namespace Team_Manager
             
         }
         public string Position { get; set; }
-        List<string> position442 = new List<string>() { "GK", "DD", "DD", "DD", "DD", "MD", "MD", "MD", "MD", "F", "F" };
-        List<string> position433 = new List<string>() { "GK", "DD", "DD", "DD", "DD", "MD", "MD", "MD", "F", "F", "F" };
-        List<string> position532 = new List<string>() { "GK", "DD", "DD", "DD", "DD", "DD", "MD", "MD", "MD", "F", "F" };
+        List<string> position442 = new List<string>() { "F", "F", "MD", "MD", "MD", "MD", "DD", "DD", "DD", "DD", "GK" };
+        List<string> position433 = new List<string>() { "F", "F", "F", "MD", "MD","MD","DD", "DD", "DD", "DD","GK"  };
+        List<string> position532 = new List<string>() { "F", "F", "MD", "MD", "MD", "DD", "DD", "DD", "DD", "DD", "GK" };
         PlayerControl player1 = new PlayerControl();
         public List<string> GeneralPos { get; set; }
         List<PlayerControl> players = new List<PlayerControl>();
@@ -118,7 +118,7 @@ namespace Team_Manager
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             TeamViewForm form = new TeamViewForm();
-            form.ShowDialoq(CountryName, CountryCode,GeneralPos);
+            form.ShowDialoq(CountryName, CountryCode,GeneralPos,players);
         }
     }
 }

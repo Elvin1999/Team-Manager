@@ -31,9 +31,7 @@
             this.labelCountry = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxFlag = new System.Windows.Forms.PictureBox();
-            this.pictureBoxTeam = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCountry
@@ -64,38 +62,28 @@
             this.pictureBoxFlag.Size = new System.Drawing.Size(132, 60);
             this.pictureBoxFlag.TabIndex = 3;
             this.pictureBoxFlag.TabStop = false;
-            // 
-            // pictureBoxTeam
-            // 
-            this.pictureBoxTeam.BackColor = System.Drawing.Color.LimeGreen;
-            this.pictureBoxTeam.Location = new System.Drawing.Point(1, 2);
-            this.pictureBoxTeam.Name = "pictureBoxTeam";
-            this.pictureBoxTeam.Size = new System.Drawing.Size(519, 738);
-            this.pictureBoxTeam.TabIndex = 2;
-            this.pictureBoxTeam.TabStop = false;
+            this.pictureBoxFlag.Click += new System.EventHandler(this.pictureBoxFlag_Click_1);
             // 
             // TeamViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LawnGreen;
+            this.BackgroundImage = global::Team_Manager.Properties.Resources.soccer_field_148894_960_720;
             this.ClientSize = new System.Drawing.Size(519, 740);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelCountry);
             this.Controls.Add(this.pictureBoxFlag);
-            this.Controls.Add(this.pictureBoxTeam);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TeamViewForm";
             this.Text = "TeamViewForm";
             this.Load += new System.EventHandler(this.TeamViewForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeam)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBoxTeam;
         private System.Windows.Forms.PictureBox pictureBoxFlag;
         private System.Windows.Forms.Label labelCountry;
         private System.Windows.Forms.Button button1;
