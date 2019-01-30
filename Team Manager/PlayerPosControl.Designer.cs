@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.labelName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNumber = new System.Windows.Forms.Label();
             this.picturePlayer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).BeginInit();
             this.SuspendLayout();
@@ -44,15 +44,15 @@
             this.labelName.TabIndex = 1;
             this.labelName.Text = "n";
             // 
-            // label1
+            // labelNumber
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(17)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(18, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(17)))), ((int)(((byte)(0)))));
+            this.labelNumber.Location = new System.Drawing.Point(18, 18);
+            this.labelNumber.Name = "labelNumber";
+            this.labelNumber.Size = new System.Drawing.Size(18, 13);
+            this.labelNumber.TabIndex = 2;
+            this.labelNumber.Text = "1";
+            this.labelNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picturePlayer
             // 
@@ -71,7 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelNumber);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.picturePlayer);
             this.Name = "PlayerPosControl";
@@ -85,6 +85,6 @@
 
         private System.Windows.Forms.PictureBox picturePlayer;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNumber;
     }
 }

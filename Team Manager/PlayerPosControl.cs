@@ -14,7 +14,7 @@ namespace Team_Manager
     public partial class PlayerPosControl : UserControl
     {
         public string Name { get { return labelName.Text; } set { labelName.Text = value; } }
-
+        public string Number { get {return labelNumber.Text; } set { labelNumber.Text = value; } }
         public PictureBox PlayerImage { get { return picturePlayer; } set { picturePlayer = value; } }
         public PlayerPosControl()
         {

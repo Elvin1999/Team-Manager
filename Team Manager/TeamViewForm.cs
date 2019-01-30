@@ -22,8 +22,6 @@ namespace Team_Manager
         int count = 0;
         public DialogResult ShowDialoq(string name, string countrycode, List<string> position, List<PlayerControl> players)
         {
-            //pictureBoxTeam.Image = Properties.Resources.soccer_field_148894_960_720;
-            //pictureBoxTeam.SizeMode = PictureBoxSizeMode.StretchImage;
             labelCountry.Text = name;
             String url = "https://www.countryflags.io/az/flat/64.png";
             var nurl = url.Insert(28, countrycode);
@@ -105,7 +103,7 @@ namespace Team_Manager
                     player1.Location = new Point(230, 550);
                 }
                 player1.Name = players[i].Name;
-
+                player1.Number = players[i].Number;
                 if (count == 0)
                 {
                     player1.PlayerImage.SizeMode = PictureBoxSizeMode.StretchImage;
