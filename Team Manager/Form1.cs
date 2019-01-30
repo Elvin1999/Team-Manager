@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Team_Manager
 {
     public partial class Form1 : Form
@@ -17,6 +16,7 @@ namespace Team_Manager
         public Form1()
         {
             InitializeComponent();
+           // metroCbPosition.SelectedIndex = 2;
             metroCmCountry.DataSource = GetCountries();
             List<string> positions = new List<string>()
             {
@@ -45,7 +45,7 @@ namespace Team_Manager
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            metroCbPosition.SelectedIndex = 0;
 
         }
 
@@ -65,7 +65,6 @@ namespace Team_Manager
             {
                 info = new RegionInfo(culture.LCID);
 
-                //MessageBox.Show(info.Name + info.EnglishName);
                 if (countryname == info.EnglishName)
                 {
                     countrycode = info.Name;
@@ -83,8 +82,14 @@ namespace Team_Manager
         List<PlayerControl> players = new List<PlayerControl>();
 
         List<PlayerControl> willdelete = new List<PlayerControl>();
+        public bool IsFirst { get; set; }
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (!IsFirst)
+            {
+                IsFirst = true;
+                return;
+            }
             foreach (var item in this.Controls)
             {
                 if(item is PlayerControl pb)
@@ -120,16 +125,16 @@ namespace Team_Manager
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             TeamViewForm form = new TeamViewForm();
-            //List<PlayerControl> newlist = new List<PlayerControl>();
             for (int i = 0; i < players.Count; i++)
             {
                 players[i].Name = players[i].NameTextbox.Text;
                 players[i].Number = players[i].NumberTextbox.Text;
             }
-            form.ShowDialoq(CountryName, CountryCode,GeneralPos,players);
+            List<PlayerControl> newlist = players;
+            form.ShowDialoq(CountryName, CountryCode,GeneralPos, newlist);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonX_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

@@ -17,10 +17,11 @@ namespace Team_Manager
         public TeamViewForm()
         {
             InitializeComponent();
+            
         }
-        List<PlayerControl> players = new List<PlayerControl>();
+        //List<PlayerControl> players = new List<PlayerControl>();
         int count = 0;
-        public DialogResult ShowDialoq(string name, string countrycode, List<string> position, List<PlayerControl> players)
+        public DialogResult ShowDialoq(string name, string countrycode, List<string> position, List<PlayerControl> myplayers)
         {
             labelCountry.Text = name;
             String url = "https://www.countryflags.io/az/flat/64.png";
@@ -102,8 +103,8 @@ namespace Team_Manager
                 {
                     player1.Location = new Point(230, 550);
                 }
-                player1.Name = players[i].Name;
-                player1.Number = players[i].Number;
+                player1.Name = myplayers[i].Name;
+                player1.Number = myplayers[i].Number;
                 if (count == 0)
                 {
                     player1.PlayerImage.SizeMode = PictureBoxSizeMode.StretchImage;
