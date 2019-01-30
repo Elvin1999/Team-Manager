@@ -16,7 +16,6 @@ namespace Team_Manager
         public Form1()
         {
             InitializeComponent();
-           // metroCbPosition.SelectedIndex = 2;
             metroCmCountry.DataSource = GetCountries();
             List<string> positions = new List<string>()
             {
@@ -46,7 +45,7 @@ namespace Team_Manager
         private void Form1_Load(object sender, EventArgs e)
         {
             metroCbPosition.SelectedIndex = 0;
-
+            buttonGenerate.Enabled = false;
         }
 
         private void pictureFlag_Click(object sender, EventArgs e)
@@ -90,6 +89,7 @@ namespace Team_Manager
                 IsFirst = true;
                 return;
             }
+            buttonGenerate.Enabled = true;
             foreach (var item in this.Controls)
             {
                 if(item is PlayerControl pb)
